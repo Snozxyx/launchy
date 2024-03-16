@@ -45,12 +45,12 @@ tasks.withType<KotlinCompile> {
     )
 }
 
-val appInstallerName = "MineInAbyss_Launcher-" + when {
+val appInstallerName = "TenXMC_Modder-" + when {
     Os.isFamily(Os.FAMILY_MAC) -> "macOS"
     Os.isFamily(Os.FAMILY_WINDOWS) -> "windows"
     else -> "linux"
 }
-val appName = "Mine in Abyss Launcher"
+val appName = "TenXMC Modder"
 
 compose.desktop {
     application {
@@ -74,7 +74,7 @@ compose.desktop {
                 shortcut = true
                 upgradeUuid = "b627d78b-947c-4f5c-9f3b-ae02bfa97d08"
                 iconFile.set(iconsRoot.resolve("icon.ico"))
-                dirChooser = false
+                dirChooser = true
                 perUserInstall = false
             }
             linux {
@@ -84,7 +84,7 @@ compose.desktop {
     }
 }
 
-val linuxAppDir = project.file("packaging/appimage/Mine in Abyss.AppDir")
+val linuxAppDir = project.file("packaging/appimage/TenXmc.AppDir")
 val appImageTool = project.file("deps/appimagetool.AppImage")
 val composePackageDir = "$buildDir/compose/binaries/main/${
     when {

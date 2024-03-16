@@ -12,9 +12,9 @@ object Dirs {
     }
 
     val mineinabyss = when (OS.get()) {
-        OS.WINDOWS -> Path(System.getenv("APPDATA")) / ".mineinabyss"
-        OS.MAC -> Path(System.getProperty("user.home")) / "Library/Application Support/mineinabyss"
-        OS.LINUX -> Path(System.getProperty("user.home")) / ".mineinabyss"
+        OS.WINDOWS -> Path(System.getenv("APPDATA")) / ".tenxmc"
+        OS.MAC -> Path(System.getProperty("user.home")) / "Library/Application Support/tenxmc"
+        OS.LINUX -> Path(System.getProperty("user.home")) / ".tenxmc"
     }
     val mods = mineinabyss / "mods"
     val tmp = mineinabyss / ".tmp"
@@ -23,10 +23,10 @@ object Dirs {
         OS.WINDOWS -> Path(System.getenv("APPDATA"))
         OS.MAC -> Path(System.getProperty("user.home")) / "Library/Application Support"
         OS.LINUX -> home / ".config"
-    } / "mineinabyss"
+    } / "TenXMC"
 
-    val configFile = config / "mia-launcher.yml"
-    val versionsFile = config / "mia-versions.yml"
+    val configFile = config / "tenxmc-launcher.yml"
+    val versionsFile = config / "tenxmc-versions.yml"
 
     fun createDirs() {
         config.createDirectories()

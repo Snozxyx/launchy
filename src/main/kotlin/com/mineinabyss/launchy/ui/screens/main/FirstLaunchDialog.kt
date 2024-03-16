@@ -62,10 +62,11 @@ fun FirstLaunchDialog(
                     color = MaterialTheme.colorScheme.onSurface,
                 )
                 Text(
-                    "Launchy is a mod installer provided by the MineInAbyss team. \n" +
-                            "It will install a MineInAbyss profile for you in the Minecraft launcher. \n" +
-                            "If you don't have the official launcher installed, you can download it by clicking the button below. \n" +
+                    "Modder is a mod installer provided by the TenXMC Team. \n" +
+                            "It will install a TenXMC profile for you in the Minecraft launcher. \n" +
+                            "The Profile will also added to your Sklauncher and Tlauncher . If you are encountring any problem , Please Notify Team Member \n" +
                             "You can also install extra recommended mods for performance and quality of life. \n" +
+                            "We Suggest you to download our minecraft Launcher LauncherX for more better experience. \n"+
                             "You can change these settings later in the settings screen.",
                     style = MaterialTheme.typography.bodyMedium,
                     modifier = Modifier.padding(bottom = 10.dp),
@@ -76,7 +77,7 @@ fun FirstLaunchDialog(
                     horizontalArrangement = Arrangement.End,
                 ) {
                     TextButton(onClick = {
-                        Browser.browse("https://www.minecraft.net/en-us/download/")
+                        Browser.browse("https://launcher.tenxmc.me")
                     }) {
                         Text("Get Minecraft Launcher", color = MaterialTheme.colorScheme.primary)
                     }

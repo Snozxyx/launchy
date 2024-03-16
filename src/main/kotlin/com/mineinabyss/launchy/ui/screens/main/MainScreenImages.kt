@@ -49,7 +49,7 @@ fun BoxScope.BackgroundTint() {
 fun LogoLarge(modifier: Modifier) {
     Image(
         painter = painterResource("mia_profile_icon.png"),
-        contentDescription = "Mine in Abyss logo",
+        contentDescription = "TenXMC",
         modifier = Modifier.widthIn(0.dp, 500.dp).fillMaxSize().then(modifier),
         contentScale = ContentScale.FillWidth
     )
